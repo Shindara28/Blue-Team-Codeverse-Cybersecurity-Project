@@ -112,4 +112,4 @@ Overall, the Blue Team demonstrated effective monitoring, analysis, and incident
 
 ## **Incident Responder**
 
-Saadu Aminullahi Abdullahi and AYILEKA NAHEEM ABIODUN
+**SAADU AMINULLAHI ABDULLAHI and AYILEKA NAHEEM ABIODUN**
