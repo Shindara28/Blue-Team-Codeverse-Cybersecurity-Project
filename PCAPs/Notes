@@ -1,0 +1,9 @@
+These screenshots were captured during the process of tracking the attack team’s network activity. 
+They show live packet analysis performed in Wireshark, revealing the communication patterns between internal hosts and external servers. 
+The captures include HTTP and HTTPS traffic, TLS-encrypted sessions, QUIC (HTTP/3) connections, retransmissions, and redirection behavior, all of which helped in understanding how the attackers’ traffic moved across the network. 
+By examining packet headers, protocol usage, and session behavior, the screenshots provide evidence of the paths taken, the services accessed, and how encrypted and unencrypted traffic was handled during the activity. 
+Together, these images form part of the network-level evidence used to analyze and trace the actions of the attack team during the engagement.
+
+
+
+Bamidele Oloruntobi David
