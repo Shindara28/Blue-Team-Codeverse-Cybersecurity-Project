@@ -13,7 +13,7 @@
 
 ## 1. Executive Summary
 
-During routine network monitoring, we detected suspicious HTTP and network traffic targeting an internal web server at `192.168.0.166`. The activity consisted of repeated HTTP requests and abnormal TCP behaviors such as retransmissions, duplicate acknowledgements, and reset packets. Additional SSDP discovery traffic was also observed within the network.
+During routine network monitoring, we detected suspicious HTTP (Hypertext Transfer Protocol) and network traffic targeting an internal web server at `192.168.0.166`. The activity consisted of repeated HTTP requests and abnormal TCP (Transmission Control Protocol) behaviors such as retransmissions, duplicate acknowledgements, and reset packets. Additional SSDP discovery traffic was also observed within the network.
 
 Based on traffic characteristics and observed behaviors, the activity was assessed as web reconnaissance and potential automated scanning aimed at identifying exposed directories or vulnerable endpoints. No evidence of successful exploitation, system compromise, or data exfiltration was found. The incident was documented, monitored, and contained through enhanced observation and simulated defensive measures.
 
@@ -26,15 +26,15 @@ The incident was detected and analyzed using the following tools and configurati
 - **Tool Used:** Wireshark and Burpsuite 
 - **Monitoring Method:**  
   - Live packet capture  
-  - Offline PCAP analysis  
+  - Offline PCAP (Packet Capture) analysis  
 - **PCAP File:** `wire.pcapng`  
 
 ### Protocols Monitored
 - HTTP  
 - TCP  
-- TLS  
-- QUIC  
-- SSDP  
+- TLS (Transport Layer Security)
+- QUIC (Quick UDP Internet Connections)  
+- SSDP (Simple Service Discovery Protocol)  
 
 Traffic was reviewed for anomalies such as repeated requests, abnormal packet behavior, and unexpected service discovery traffic.
 
