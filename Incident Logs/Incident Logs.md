@@ -7,7 +7,7 @@
   **Time Window:** Approx. 12:30 PM – 2:30 PM (WAT)  
 - **Team:** Blue Team  
 - **System Affected:** Web Server (HTTP)  
-- **Internal IP Address:** 192.168.0.166  
+- **Internal IP Address:** 192.168.69.175  
 
 ---
 
@@ -40,7 +40,7 @@ _ **Tool Used:** Wireshark and Burpsuite
 
 | Time Range        | Source IP        | Destination IP     | Protocol   | Observation                                   |
 |-------------------|------------------|--------------------|------------|-----------------------------------------------|
-| 12:30–2:30 PM     | 146.75.90.172    | 192.168.0.166      | HTTP/TCP  | Repeated HTTP requests    |                    
+| 12:30–2:30 PM     | 146.75.90.172    | 192.168.69.175      | HTTP/TCP  | Repeated HTTP requests    |                    
 | Various           | 192.168.0.172    | Internal Host      | TCP       | Suspicious traffic patterns                   |
 | Various           | 192.168.0.151    | Internal Host      | TCP       | Network anomalies                             |
 | Various           | 192.168.0.134    | Internal Host      | TCP       | TCP retransmissions                           |
