@@ -13,7 +13,7 @@
 
 ## 1. Executive Summary
 
-During routine network monitoring, we detected suspicious HTTP and network traffic targeting an internal web server at `192.168.0.166`. The activity consisted of repeated HTTP requests, large payload transfers requiring TCP reassembly, and abnormal TCP behaviors such as retransmissions, duplicate acknowledgements, and reset packets. Additional SSDP discovery traffic was also observed within the network.
+During routine network monitoring, we detected suspicious HTTP and network traffic targeting an internal web server at `192.168.0.166`. The activity consisted of repeated HTTP requests and abnormal TCP behaviors such as retransmissions, duplicate acknowledgements, and reset packets. Additional SSDP discovery traffic was also observed within the network.
 
 Based on traffic characteristics and observed behaviors, the activity was assessed as web reconnaissance and potential automated scanning aimed at identifying exposed directories or vulnerable endpoints. No evidence of successful exploitation, system compromise, or data exfiltration was found. The incident was documented, monitored, and contained through enhanced observation and simulated defensive measures.
 
@@ -23,7 +23,7 @@ Based on traffic characteristics and observed behaviors, the activity was assess
 
 The incident was detected and analyzed using the following tools and configurations:
 
-- **Tool Used:** Wireshark  
+- **Tool Used:** Wireshark and Burpsuite 
 - **Monitoring Method:**  
   - Live packet capture  
   - Offline PCAP analysis  
@@ -44,7 +44,7 @@ Traffic was reviewed for anomalies such as repeated requests, abnormal packet be
 
 | Time Range        | Source IP        | Destination IP     | Protocol   | Observation                                   |
 |-------------------|------------------|--------------------|------------|-----------------------------------------------|
-| 12:30–2:30 PM     | 146.75.90.172    | 192.168.0.166      | HTTP/TCP  | Repeated HTTP requests with large payloads    |
+| 12:30–2:30 PM     | 146.75.90.172    | 192.168.0.166      | HTTP/TCP  | Repeated HTTP requests    |                    
 | Various           | 192.168.0.172    | Internal Host      | TCP       | Suspicious traffic patterns                   |
 | Various           | 192.168.0.151    | Internal Host      | TCP       | Network anomalies                             |
 | Various           | 192.168.0.134    | Internal Host      | TCP       | TCP retransmissions                           |
@@ -58,7 +58,6 @@ Traffic was reviewed for anomalies such as repeated requests, abnormal packet be
 Analysis of the PCAP file and supporting screenshots revealed the following indicators:
 
 - Repeated HTTP requests originating from an external IP address.
-- Large HTTP payloads requiring TCP PDU reassembly, suggesting automated or scripted interaction.
 - TCP anomalies, including:
   - Duplicate acknowledgements  
   - Retransmissions  
