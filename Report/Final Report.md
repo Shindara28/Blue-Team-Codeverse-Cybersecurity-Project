@@ -5,51 +5,47 @@
 ### Team
 **Blue Team (B1 / B2)**
 
-### Members (11 Students)
-Oluwashindara Toluwanimi Majiyagbe
+### Team Members (12 Students)
 
-Oba Abdulkadir
-
-Abdulrasheed Abdulmalik Abbey
-
-Simon Daniel Mathew
-
-Bamidele Oloruntobi David
-
-Ayileka Naheem Abiodun 
-
-Saadu Aminullahi Abdullahi
-
-Oyindolapo Ayomide Omolewa
-
-Timothy Victor Onyedikachukwu
-
-Habeeb Abdulrahman
-
-Olohun-oyin Ayomide Ibrahim
-
-Yusuf Abdulqoyum Ayodeji
+1. Oluwashindara Toluwanimi Majiyagbe  
+2. Oba Abdulkadir  
+3. Abdulrasheed Abdulmalik Abbey  
+4. Simon Daniel Mathew  
+5. Bamidele Oloruntobi David  
+6. Ayileka Naheem Abiodun  
+7. Saadu Aminullahi Abdullahi  
+8. Oyindolapo Ayomide Omolewa  
+9. Timothy Victor Onyedikachukwu  
+10. Habeeb Abdulrahman  
+11. Olohun-oyin Ayomide Ibrahim  
+12. Yusuf Abdulqoyum Ayodeji
 
 ### Date
 11th to 18th of December 2025
 
 ---
 ## Role Assignment
-**Defence Team Lead:** Oluwashindara Toluwanimi Majiyagbe
-She coordinated all team activities and task assignments while overseeing monitoring, detection, and incident response operations. She ensured compliance with the Rules of Engagement and reviewed and finalized the incident report.
+## Team Roles and Responsibilities
 
-**SOC Analysts:** Oyindolapo Ayomide Omolewa, Timothy Victor Onyedikachukwu and Olohun-oyin Ayomide Ibrahim 
-They reviewed system, server, and SOC logs to identify abnormal patterns and potential threats. They logged timestamps, source and destination IPs, and correlated network events with observed suspicious activity.
+### Defence Team Lead
+**Oluwashindara Toluwanimi Majiyagbe**  
+She coordinated all team activities and task assignments, overseeing monitoring, detection, and incident response operations. She ensured compliance with the Rules of Engagement and reviewed and finalized the incident report.
 
-**Incident Responders:** Saadu Aminullahi Abdullahi and Ayileka Naheem Abiodun 
-The Incident Responders investigated alerts and unusual traffic patterns while preserving evidence including PCAPs, screenshots, and logs. They simulated containment actions such as IP blocking or traffic restrictions in accordance with the Rules of Engagement.
+### SOC Analysts
+**Oyindolapo Ayomide Omolewa, Timothy Victor Onyedikachukwu, and Olohun-oyin Ayomide Ibrahim**  
+They analyzed system, server, and SOC logs to identify abnormal patterns and potential threats. They recorded timestamps, source and destination IPs, and correlated network events with observed suspicious activity.
 
-**Traffic Monitors:** Bamidele Oloruntobi David, Simon Daniel Mathew and Habeeb Abdulrahman
-They captured and analyzed network traffic using Wireshark and Burpsuite, identifying suspicious HTTP, TCP, and service discovery activity. They applied filters to isolate anomalous behavior and reported all findings to the team.
+### Incident Responders
+**Saadu Aminullahi Abdullahi and Ayileka Naheem Abiodun**  
+They investigated alerts and irregular traffic patterns, preserving all evidence and simulating containment scenarios according to procedural guidelines.
 
-**Evidence Analysts:** Oba Abdulkadir, Abdulrasheed Abdulmalik Abbey and Yusuf Abdulqoyum Ayodeji
-They maintained detailed SOC records of monitoring and response activities. They prepared supporting evidence for the final report and ensured accurate record-keeping for lessons learned and future reference.
+### Traffic Monitors
+**Bamidele Oloruntobi David, Simon Daniel Mathew, and Habeeb Abdulrahman**  
+They captured and analyzed network traffic using Wireshark and Burp Suite, identifying suspicious HTTP, TCP, and service discovery activity. Filters were applied to isolate anomalous behavior, and findings were reported to the team.
 
+### Evidence Analysts
+**Oba Abdulkadir, Abdulrasheed Abdulmalik Abbey, and Yusuf Abdulqoyum Ayodeji**  
+They maintained detailed SOC records of monitoring and response activities, prepared supporting evidence for the final report, and ensured accurate record-keeping for lessons learned and future reference.
 ## Blue Team Objectives
 - Monitor network and system activity for suspicious or anomalous behavior.  
 - Detect reconnaissance, enumeration, and potential attack attempts.  
