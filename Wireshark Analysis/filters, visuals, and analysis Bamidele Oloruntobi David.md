@@ -1,20 +1,23 @@
-# Wireshark Capture Summary
+![Screenschot 1](https://github.com/user-attachments/assets/9a23dd34-7b11-41d8-8570-df727d3c5db5)# Wireshark Capture Summary
 
 This document presents an expanded summary of three Wireshark screenshots captured during network traffic analysis. The purpose of these captures is to demonstrate how common web protocols operate at the packet level, how Wireshark reconstructs and interprets traffic, and how to distinguish normal network behavior from potentially suspicious activity. Together, the screenshots provide clear examples of unencrypted HTTP communication, modern encrypted web traffic, and secure redirection mechanisms.
 
 ## Capture 1: Plain HTTP over TCP
+![Screenschot 1](https://github.com/user-attachments/assets/353a683c-028b-4920-859d-b3b57b00e18b)
 
 The first capture illustrates a traditional HTTP session running over TCP port 80 between a local client (192.168.0.166) and a public web server (146.75.90.172). Because the traffic is unencrypted, Wireshark is able to display and reassemble the full HTTP payload. Large responses are divided into multiple TCP segments and later reconstructed into a single readable HTTP object.
 
 The TCP three-way handshake occurred before the visible packets, indicating an already established session. Frequent PSH and ACK flags confirm continuous data transfer and reliable delivery. No retransmissions, resets, or errors are visible in the shown frames, which indicates a stable and healthy connection. This capture represents normal web browsing behavior and highlights the main weakness of HTTP: all transmitted data is exposed and readable on the network.
 
 ## Capture 2: Mixed Encrypted Web Traffic and Protocol Behavior
+<img width="1557" height="467" alt="Screenschot 2" src="https://github.com/user-attachments/assets/244e89c2-509e-4d5e-888d-06a9dedb3a1a" />
 
 The second capture demonstrates a more realistic modern browsing session, combining multiple protocols and encryption methods. Traffic includes HTTPS over TLSv1.3, HTTP/3 over QUIC, plain HTTP, SSDP discovery messages, and standard TCP control packets. Most of the web traffic is encrypted, resulting in “Protected Payload” entries that Wireshark cannot decode without session keys.
 
 This capture also shows TCP reliability mechanisms in action. Retransmissions and duplicate acknowledgments indicate minor packet loss or congestion, while a TCP reset reflects a normal connection closure or protocol transition, such as a browser switching from TCP-based HTTPS to QUIC-based HTTP/3. The presence of QUIC traffic highlights current browser behavior, prioritizing performance and reduced latency. Overall, the observed activity is consistent with normal web usage rather than malicious behavior.
 
 ## Capture 3: HTTPS Redirect and HTTP/2 Inspection
+![Screenshot 3](https://github.com/user-attachments/assets/25f28021-315f-4cea-96f7-aa30c44e45cc)
 
 The third capture focuses on Wireshark’s ability to reconstruct encrypted traffic when decryption keys are available. It shows an HTTPS request using HTTP/2 to zonetransfer.me, followed by a 301 Moved Permanently response that redirects the client to DigiNinja’s hosted page. Both the request and response headers are visible after TLS decryption, despite the traffic being encrypted on the wire.
 
