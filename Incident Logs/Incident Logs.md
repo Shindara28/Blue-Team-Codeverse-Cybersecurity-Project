@@ -53,7 +53,7 @@ Traffic was reviewed for anomalies such as repeated requests, abnormal packet be
 
 ---
 
-## 4. Traffic Analysis (Wireshark)
+## 4. Traffic Analysis (Wireshark and Burpsuite)
 
 Analysis of the PCAP file and supporting screenshots revealed the following indicators:
 
@@ -68,19 +68,8 @@ These indicators are consistent with reconnaissance or enumeration behavior rath
 
 ---
 
-## 5. Incident Response Actions
 
-The Blue Team performed the following actions:
-
-- Formally documented and logged the incident.
-- Identified and recorded suspicious source IP addresses.
-- Recommended simulated blocking of identified IPs to demonstrate defensive response.
-- Increased traffic monitoring to observe post-incident activity.
-- Determined that system isolation or shutdown was unnecessary due to lack of confirmed compromise.
-
----
-
-## 6. System Weaknesses Identified
+## 5. System Weaknesses Identified
 
 - Open HTTP service exposed to external traffic.
 - Lack of visible rate-limiting mechanisms on web endpoints.
@@ -89,7 +78,7 @@ The Blue Team performed the following actions:
 
 ---
 
-## 7. Mitigation Recommendations
+## 6. Mitigation Recommendations
 
 To reduce future risk, the following measures are recommended:
 
@@ -101,7 +90,7 @@ To reduce future risk, the following measures are recommended:
 
 ---
 
-## 8. Final Assessment
+## 7. Final Assessment
 
 The incident was successfully detected, analyzed, and contained by the Blue Team. No evidence of data loss, system compromise, or service disruption was identified. The activity is classified as **low-to-moderate risk reconnaissance**.
 
