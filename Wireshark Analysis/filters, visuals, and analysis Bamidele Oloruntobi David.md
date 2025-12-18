@@ -6,7 +6,7 @@ This document presents an expanded summary of three Wireshark screenshots captur
 ![Screenschot 1](https://github.com/user-attachments/assets/810d5543-301b-44c7-9bac-12e92041fae0)
 
 
-The first capture illustrates a traditional HTTP session running over TCP port 80 between a local client (192.168.0.166) and a public web server (146.75.90.172). Because the traffic is unencrypted, Wireshark is able to display and reassemble the full HTTP payload. Large responses are divided into multiple TCP segments and later reconstructed into a single readable HTTP object.
+The first capture illustrates a traditional HTTP session running over TCP port 80 between a local client (192.168.69.175) and a public web server (146.75.90.172). Because the traffic is unencrypted, Wireshark is able to display and reassemble the full HTTP payload. Large responses are divided into multiple TCP segments and later reconstructed into a single readable HTTP object.
 
 The TCP three-way handshake occurred before the visible packets, indicating an already established session. Frequent PSH and ACK flags confirm continuous data transfer and reliable delivery. No retransmissions, resets, or errors are visible in the shown frames, which indicates a stable and healthy connection. This capture represents normal web browsing behavior and highlights the main weakness of HTTP: all transmitted data is exposed and readable on the network.
 
