@@ -11,4 +11,4 @@ During traffic analysis, the following internal hosts were observed generating a
 | 192.168.0.185    | SSDP M-SEARCH discovery traffic detected           |
 
 ### Assessment
-The listed IP addresses are internal hosts that exhibited abnormal or notable behavior during packet inspection. While no confirmed compromise was identified, the observed activity may indicate misconfigurations, background service activity, or indirect participation in reconnaissance-related traffic. Continued monitoring and detailed host-level review are recommended.
+The listed IP addresses are internal hosts that exhibited abnormal or notable behavior during packet inspection. While no confirmed compromise was identified, the observed activity may indicate misconfigurations, background service activity, or indirect participation in reconnaissance-related traffic. Continued monitoring and detailed host-level review are recommended
