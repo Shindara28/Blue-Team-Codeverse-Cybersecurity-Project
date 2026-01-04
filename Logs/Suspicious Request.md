@@ -75,4 +75,4 @@ Retransmissions without successful session establishment can suggest scanning be
 ---
 
 ### Analyst Assessment
-The traffic patterns described above are consistent with reconnaissance activity, abnormal application behavior, or partially blocked communications rather than confirmed exploitation. These indicators support the overall classification of the incident as **low-to-moderate risk**, warranting continued monitoring and preventive hardening rather than immediate containment.
+The traffic patterns described above are consistent with reconnaissance activity, abnormal application behavior, or partially blocked communications rather than confirmed exploitation. These indicators support the overall classification of the incident as **low-to-moderate risk**, warranting continued monitoring and preventive hardening rather than immediate containment
