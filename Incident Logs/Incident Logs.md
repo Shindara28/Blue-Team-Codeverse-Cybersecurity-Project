@@ -82,7 +82,7 @@ To reduce future risk, the following measures are recommended:
 - Restrict access to sensitive directories and administrative endpoints.
 - Disable or limit unnecessary discovery services such as SSDP.
 - Enable automated alerts for abnormal HTTP request patterns.
-- Apply proactive firewall rules to block suspicious or malicious IP addresses.
+- Apply proactive firewall rules to block suspicious or malicious IP addresses
 
 ---
 
