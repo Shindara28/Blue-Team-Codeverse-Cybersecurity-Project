@@ -101,5 +101,6 @@ The exercise demonstrated effective defensive monitoring, structured incident re
 
 ---
 
+
 **Prepared by:** Blue Team (Defenders)  
 **Exercise:** Operation CodeVerse Breach
