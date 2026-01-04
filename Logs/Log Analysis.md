@@ -155,7 +155,7 @@ While automated scanning or enumeration activity cannot be fully ruled out, no s
 
 ## 10. Conclusion
 
-The analyzed network traffic represents a stable HTTP session with high-volume data transfer and no immediate indicators of malicious activity. Despite the benign nature of the observed traffic, the use of plaintext HTTP introduces unnecessary risk. Continued monitoring and implementation of encryption and security controls are recommended to reduce exposure.
+The analyzed network traffic represents a stable HTTP session with high-volume data transfer and no immediate indicators of malicious activity. Despite the benign nature of the observed traffic, the use of plaintext HTTP introduces unnecessary risk. Continued monitoring and implementation of encryption and security controls are recommended to reduce exposure
 
 ---
 
